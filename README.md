@@ -29,7 +29,7 @@ If you have updated raw weather data (daily Tmin, Tmax, Prec from DWD), run the 
 source("weather_param_derivation.R")
 ```
 
-**Input:** `weather_koeln-bonn_raw.RDS` — raw DWD station data (Köln/Bonn Airport, Station ID 2667) containing daily Tmin, Tmax, and Prec for historical observations and CMIP6 climate projections.
+**Input:** `weather_koeln-bonn_raw.RDS` — raw weather data containing daily Tmin, Tmax, and Prec for historical observations and CMIP6 climate projections.
 
 **Output:** `weather_koeln-bonn_parameterised.rds` — same data enriched with derived parameters: Tavg, relative humidity (RH_mean, RH_max, RH_min), soil temperature (Ts_5cm), reference evapotranspiration (ET0_mm, FAO-56 Penman-Monteith), photosynthetically active radiation (PAR), growing degree days (GDD_daily), and consecutive wet/dry day counts.
 
@@ -133,16 +133,9 @@ install.packages(c("data.table", "lubridate", "decisionSupport", "compiler", "zo
 - Gilles, T. et al. (2004). MILIONCAST. *Plant Dis.* 88:695-702.
 - Abawi, G.S., Lorbeer, J.W. (1972). Several aspects of the ecology and pathology of *Fusarium oxysporum* f. sp. *cepae*. *Phytopathology* 62:870-876.
 
-## License
-
-[To be specified]
 
 ## Data Availability
 
-The `.RDS` data files are excluded from Git (see `.gitignore`) because they are too large. To reproduce the analysis:
-
-1. Download daily Tmin, Tmax, Prec from [DWD Climate Data Center](https://opendata.dwd.de/climate_environment/CDC/) for Köln/Bonn Airport (Station ID 2667)
-2. Combine historical and CMIP6 projection data into `weather_koeln-bonn_raw.RDS`
-3. Run `recalculate_weather_HUMID_CLIMATE.R` to produce `weather_koeln-bonn_corrected1.rds`
+- all Data utilized in the model is uploaded in this repository
 
 Alternatively, the processed data files are available from the corresponding author upon request.
