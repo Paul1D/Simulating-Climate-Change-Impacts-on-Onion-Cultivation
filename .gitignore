@@ -1,0 +1,13 @@
+# Large binary data files — too big for Git
+# These must be obtained separately (see README.md)
+*.RDS
+*.rds
+
+# R workspace / history
+.Rhistory
+.RData
+.Rproj.user/
+
+# OS files
+.DS_Store
+Thumbs.db

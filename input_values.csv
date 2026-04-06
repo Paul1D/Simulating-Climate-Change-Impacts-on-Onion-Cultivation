@@ -1,0 +1,61 @@
+variable;lower;median;upper;distribution;label;Description
+GDD_field_emergence_required_p;250;NA;300;posnorm;GDD emergence;Growing degree days required for emergence phase threshold.
+GDD_vegetative_required_p;900;NA;1000;posnorm;GDD vegetative;Growing degree days required until end of vegetative phase.
+GDD_bulbing_required_p;1400;NA;1550;posnorm;GDD bulbing;Growing degree days required until end of bulbing.
+GDD_maturation_required_p;1900;NA;2000;posnorm;GDD maturation;CUMULATIVE Growing degree days required until crop maturity.
+sowing_day_p;45;NA;135;posnorm;Sowing day (yday);Day of year when onions are sown (DOY 45 = mid-Feb, DOY 135 = mid-May).
+LUE_em_p;0.5;NA;1;posnorm;LUE emergence (g/MJ);Light use efficiency during emergence phase.
+LUE_vg_p;1.2;NA;2;posnorm;LUE vegetative (g/MJ);Light use efficiency during vegetative phase.
+LUE_bl_p;2;NA;3;posnorm;LUE bulbing (g/MJ);Light use efficiency during bulbing phase.
+LUE_mt_p;1.2;NA;2.2;posnorm;LUE maturation (g/MJ);Light use efficiency during maturation phase.
+HI_onions_t;0.7;NA;0.75;tnorm_0_1;Harvest Index;Fraction of biomass partitioned to the bulb.
+lec_k_c;0.4;NA;0.5;posnorm;k parameter;Light extinction coefficient k for Beer-Lambert radiation model.
+dry_matter_content_t;0.1;NA;0.12;tnorm_0_1;Dry matter content;Dry matter content to calculate fresh yield.
+Tmin_growth_p;3;NA;5;posnorm;Temp minimum growth;Minimum temperature for onion growth (Beta curve).
+Topt_growth_p;22;NA;26;posnorm;Temp optimum growth;Optimum temperature for onion growth (Beta curve).
+Tmax_growth_p;32;NA;36;posnorm;Temp maximum growth;Maximum temperature for onion growth (Beta curve).
+f_W_1_lower_t;0.65;NA;0.75;tnorm_0_1;Water lower optimal;Lower bound of water response function.
+nfk_mm_per_cm_p;1.8;NA;2.2;posnorm;nFK (mm/cm);Plant-available field capacity per cm root depth. Geisenheimer Tab.1: schluffiger Lehm (uL) = 22 Vol pct = 2.2 mm/cm.
+max_irrig_mm_p;25;NA;30;posnorm;Max irrigation (mm);Maximum irrigation dose per event.
+root_em_cm_p;25;NA;35;posnorm;Root depth EM (cm);Geisenheimer: 0-30 cm for Stadium 1.
+root_vg_cm_p;25;NA;35;posnorm;Root depth VG (cm);Geisenheimer: 0-30 cm for Stadium 2.
+root_bl_cm_p;50;NA;60;posnorm;Root depth BL (cm);Geisenheimer: 0-60 cm for Stadium 3.
+root_mt_cm_p;50;NA;60;posnorm;Root depth MT (cm);Geisenheimer: 0-60 cm for Stadium 4.
+kc_em_p;0.45;NA;0.55;posnorm;Kc EM;Geisenheimer kc Stadium 1: ab Auflaufen (BBCH 09). Ref: Zinkernagel et al. 2022.
+kc_vg_p;0.9;NA;1.1;posnorm;Kc VG;Geisenheimer kc Stadium 2: ab 5. Blatt (BBCH 15). Ref: Zinkernagel et al. 2022.
+kc_bl_p;1;NA;1.3;posnorm;Kc BL;Geisenheimer kc Stadium 3: ab 8. Blatt (BBCH 18). Ref: Zinkernagel et al. 2022.
+kc_mt_p;0.1;NA;0.3;posnorm;Kc MT;Geisenheimer kc Stadium 4: ab Schlottenknicken (BBCH 47). kc=0 per Geisenheim. Small range for MC.
+prec_extreme_rain_medium_p;25;NA;35;posnorm;Moderate rain threshold;Threshold for medium extreme rainfall.
+prec_extreme_rain_high_p;45;NA;60;posnorm;High rain threshold;Threshold for high extreme rainfall.
+impact_days_extreme_rain_t;0.3;NA;0.8;tnorm_0_1;Impact duration;Days of impact after extreme rain event.
+yield_reduction_extreme_rain_t;0.1;NA;0.3;tnorm_0_1;Yield loss fraction;Fractional yield loss if extreme rain occurs.
+rh_mildew_threshold_p;93;NA;99;posnorm;Humidity threshold;RH threshold for downy mildew onset.
+Tmin_mildew_p;1;NA;4;posnorm;Tmin mildew;Minimum temperature for mildew growth.
+Topt_mildew_p;9;NA;13;posnorm;Optimal temp mildew;Downy mildew optimal temperature.
+Tmax_mildew_p;23;NA;27;posnorm;Tmax mildew;Maximum temperature for mildew growth.
+yield_reduction_downy_mildew_t;0.15;NA;0.4;tnorm_0_1;Yield loss fraction;Fractional reduction due to downy mildew.
+Tmin_fusarium_p;10;NA;14;posnorm;Tmin Fusarium;Minimum soil temperature for Fusarium growth.
+Topt_fusarium_p;28;NA;31.9;posnorm;Optimal soil temp;Fusarium optimal soil temperature.
+Tmax_fusarium_p;32;NA;34;posnorm;Tmax Fusarium;Maximum soil temperature for Fusarium growth.
+fusarium_theta_optimal_upper_p;0.7;NA;0.8;tnorm_0_1;Waterlogging threshold (Fusarium);Relative soil moisture threshold above which Fusarium risk is scored. Ref: Abawi & Lorbeer (1972); Cramer (2000).
+yield_reduction_fusarium_t;0.1;NA;0.3;tnorm_0_1;Yield loss fraction;Fractional yield loss from Fusarium.
+prec_botrytis_wet_p;3;NA;5;posnorm;Prec leaf-wetness gate;Daily precipitation threshold (mm). Sharpened from 1-3 to 3-5 mm. Ref: Sutton et al. (1986) BOTCAST.
+Tmin_botrytis_p;1;NA;2;posnorm;Tmin Botrytis;Minimum temperature for Botrytis growth.
+Topt_botrytis_p;15;NA;20;posnorm;Optimal temp Botrytis;Botrytis optimum temperature.
+Tmax_botrytis_p;23;NA;27;posnorm;Tmax Botrytis;Maximum temperature for Botrytis growth.
+yield_reduction_botrytis_t;0.1;NA;0.3;tnorm_0_1;Yield loss fraction;Fractional yield loss if Botrytis occurs.
+chance_hail_historical;0.01;NA;0.02;unif;Chance Hail event 2020 (Baseline);Chance that hail event might occur in future scenario 
+yield_reduction_hail_historical;0.01;NA;0.99;unif;Yield loss fraction;Fractional yield loss if hail event occurs
+chance_hail_future;0.005;NA;0.05;unif;Chance Hail event 2075;Chance that hail event might occur in 2075
+yield_reduction_hail_future;0.01;NA;0.99;unif;Yield loss fraction;Fractional yield loss if hail event occurs
+LAI_emergence_p;0.05;NA;0.15;tnorm_0_1;LAI emergence;Leaf area index during emergence phase.
+LAI_veg_p;1.5;NA;2.5;posnorm;LAI vegetative;Leaf area index during vegetative phase.
+LAI_bulbing_p;2.5;NA;3.5;posnorm;LAI bulbing;Leaf area index during bulbing phase.
+LAI_maturation_p;0.8;NA;1.3;posnorm;LAI maturation;Leaf area index during maturation phase (declining canopy).
+f_W_floor_t;0.12;NA;0.2;tnorm_0_1;Water stress floor;Minimum f(W) at PWP. Non-zero floor prevents complete cessation in MC framework.
+S_co2_p;0.0006;NA;0.0008;posnorm;CO2 sensitivity S_co2 (per ppm);CO₂ fertilisation sensitivity for C3 crops in SIMPLE model: f(CO₂) = 1 + S_co2 × (CO₂ - CO₂_ref) for CO₂ < 700 ppm, capped at 700 ppm. CO₂_ref = co2_ppm_historical (~415 ppm). Wheat/soybean S_co2 = 0.0008/0.0007 (Zhao et al. 2019 Table 1a). Onion as C3 vegetable: 0.0006-0.0008. Consistent with ~7% yield gain per 100 ppm (Ainsworth & Long 2005).
+co2_ppm_historical;414;NA;416;posnorm;CO2 historical (ppm);Atmospheric CO2 concentration for 2020 baseline (~415 ppm observed). Small range reflects measurement uncertainty.
+co2_ppm_ssp126;460;NA;480;posnorm;CO2 SSP1-2.6 2075 (ppm);Projected CO2 for SSP1-2.6 at 2075. IPCC AR6: ~430-490 ppm (aggressive mitigation).
+co2_ppm_ssp245;560;NA;580;posnorm;CO2 SSP2-4.5 2075 (ppm);Projected CO2 for SSP2-4.5 at 2075. IPCC AR6: ~530-620 ppm (intermediate emissions).
+co2_ppm_ssp370;670;NA;690;posnorm;CO2 SSP3-7.0 2075 (ppm);Projected CO2 for SSP3-7.0 at 2075. IPCC AR6: ~640-760 ppm (high emissions).
+co2_ppm_ssp585;780;NA;820;posnorm;CO2 SSP5-8.5 2075 (ppm);Projected CO2 for SSP5-8.5 at 2075. IPCC AR6: ~750-900 ppm (very high emissions).
